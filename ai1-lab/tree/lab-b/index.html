@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Lista zadań - Michał Puszcz</h1>
+        <input type="text" id="search" placeholder="Szukaj zadań...">
+        <ul id="todo-list"></ul>
+        <form id="add-form" autocomplete="off">
+            <input type="text" id="new-task" placeholder="Nowe zadanie..." maxlength="255">
+            <input type="datetime-local" id="new-deadline">
+            <button type="submit">Dodaj</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
