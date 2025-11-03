@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mapowa Układanka</title>
+  <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧩 Mapowa Układanka</h1>
+
+  <div id="map"></div>
+
+  <script src="leaflet-1.7.1/leaflet.js"></script>
+  <script src="leaflet-1.7.1/leaflet-src.js"></script>
+  <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+  <script src="leaflet-1.7.1/leaflet-image.js"></script>
+  <div id="buttons">
+    <button onclick="getLocation()">📍 Moja lokalizacja</button>
+    <button onclick="captureMap()">🗺 Pobierz mapę</button>
+  </div>
+  <div id="positionInfo">
+    <strong>Szerokość:</strong> <span id="latitude">–</span><br>
+    <strong>Długość:</strong> <span id="longitude">–</span>
+  </div>
+  
+  <h2>Układanka</h2>
+  <div id="puzzle-container">
+    <div id="puzzle-source" class="puzzle-box"><strong>🔀 Puzzle</strong></div>
+    <div id="puzzle-target" class="puzzle-box"><strong>🎯 Siatka</strong></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
