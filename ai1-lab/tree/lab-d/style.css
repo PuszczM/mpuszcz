@@ -1,0 +1,140 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #cfe9ff, #e2f2ff);
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+#search-container {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.main-weather {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.main-weather h2 {
+    margin-bottom: 5px;
+}
+
+.main-weather .date {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.main-weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.main-weather-info .temp {
+    font-size: 42px;
+    margin: 0;
+}
+
+.main-weather-info .desc {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #555;
+}
+
+#weather-results {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.forecast-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.forecast-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.forecast-main img {
+    width: 60px;
+    height: 60px;
+}
+
+.forecast-main .temp {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.forecast-details {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin-top: 0;
+}
+
+.forecast-card:hover .forecast-details {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.forecast-details p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.forecast-main .desc {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #666;
+}
